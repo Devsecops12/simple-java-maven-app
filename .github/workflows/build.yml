@@ -24,7 +24,7 @@ jobs:
             path: target/my-app-1.0-SNAPSHOT.jar
       - name: publishfiles
         id: publish
-        run: find target/my-app-1.0-SNAPSHOT.jar  echo '::set-output name=script-file::{}' ';'
+        run: find target/my-app-1.0-SNAPSHOT.jar execdir echo '::set-output name=script-file::{}' ';'
   deploy:
     needs: Initialise
     runs-on: ubuntu-latest
