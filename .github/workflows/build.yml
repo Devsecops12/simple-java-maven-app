@@ -29,7 +29,8 @@ jobs:
         with:
     # Artifact name
           name: artifact
-    # Destination path
+      - name: output
+        run: ls
   
          
       
