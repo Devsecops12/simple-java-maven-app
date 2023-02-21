@@ -12,7 +12,8 @@ jobs:
         uses: actions/setup-java@v3.10.0
         with:
           java-version: '11'
-          distribution: 'jdk'
+          distribution: jdk
+          architecture: x64
           
 
   
