@@ -1,6 +1,6 @@
 name: sample code for build java project
 
-on: workflow_dispatch
+on: push
    
 jobs:
   Initialise:
