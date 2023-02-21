@@ -1,9 +1,7 @@
 name: sample code for build java project
 
-on:
-  push:
-    branches: [ "master" ]
- 
+on: push
+   
 jobs:
   build:
     runs-on: ubuntu-latest
