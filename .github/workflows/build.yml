@@ -1,1 +1,23 @@
+name: sample code for build java project
+
+on:
+  push:
+    branches: [ "master" ]
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3.3.0
+      - name: Setup Java JDK
+        uses: actions/setup-java@v3.10.0
+        with:
+          java-version: '11'
+          distribution: 'jdk'
+          
+
+  
+
+    
 
