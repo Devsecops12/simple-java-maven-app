@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: ouput github context
-        run: echo "${{ toJSON(job) }}"
+        run: echo "${{ steps }}"
       
 
   
