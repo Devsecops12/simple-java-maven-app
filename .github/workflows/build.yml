@@ -1,24 +1,14 @@
 name: sample code for build java project
 
-on: push
+on: workflow_dispatch
    
 jobs:
   Initialise:
     runs-on: ubuntu-latest
-    steps:
-      - name: checkout code
-        uses: actions/checkout@v3.3.0
-      - name: Setup Java JDK
-        uses: actions/setup-java@v3.10.0
-        with:
-         distribution: 'zulu'
-         java-version: '11'
-         java-package: jdk
-      - name: check java version
-        run: java --version
-        
-      - name: build job
-        run: maven package 
+    steps: 
+      - name: ouput github context
+        run: echo "${{ github }}"
+      
 
   
   
