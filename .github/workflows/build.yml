@@ -3,7 +3,7 @@ name: sample code for build java project
 on: push
    
 jobs:
-  build:
+  Initialise:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
@@ -16,6 +16,11 @@ jobs:
          java-package: jdk
       - name: check java version
         run: java --version
+        
+      - name: build job
+        run: maven package 
+
+  
   
           
 
