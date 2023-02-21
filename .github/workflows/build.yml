@@ -11,7 +11,9 @@ jobs:
       - name: Setup Java JDK
         uses: actions/setup-java@v3.10.0
         with:
-          java-version: '11'
+         distribution: 'zulu'
+         java-version: '11'
+         java-package: jdk
   
           
 
